@@ -1,0 +1,4 @@
+class Hashes
+hash={"a"=>[a,b,c],"b"=>[d,e,f]}
+  hash.values
+end

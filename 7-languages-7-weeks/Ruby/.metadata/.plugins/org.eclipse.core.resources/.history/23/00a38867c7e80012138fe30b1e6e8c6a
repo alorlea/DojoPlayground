@@ -1,0 +1,14 @@
+class FileAccess
+  aFile=File.new("temp.txt","a+")
+  aFile.syswrite("hello world!")
+  aFile.close()
+  
+  File.open("temp.txt","a+") do |f|
+    while line=f.gets
+      puts line
+    end
+  end
+  f=File.read("temp.txt","a+")
+   puts f.gets
+  
+end

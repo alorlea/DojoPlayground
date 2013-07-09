@@ -1,0 +1,10 @@
+class FileAccess
+  aFile=File.new("temp.txt","a+")
+  aFile.syswrite("hello world!")
+  aFile.close()
+  
+  File.open("temp.txt","a+") do |aFile|
+    content=aFile.sysread(20)
+    puts content
+  end
+end

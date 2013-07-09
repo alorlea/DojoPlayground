@@ -1,0 +1,5 @@
+class FileAccess
+  File.new("temp.txt","a+") do |aFile|
+    aFile.syswrite("hello world!")
+  end
+end
