@@ -9,3 +9,6 @@ hash.each do |key,value|
   puts value
 end
 end
+
+#Array can be used as lists, queues and dequuess and stacks
+#Hashes, sets 
